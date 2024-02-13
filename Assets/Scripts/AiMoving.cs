@@ -5,7 +5,8 @@ using UnityEngine;
 public class AiMoving : MonoBehaviour
 {
     [SerializeField] private GameObject player;
-    [SerializeField] private float speed = 5;
+    [SerializeField] private float speed = .00005f;
+    
     
     void Start()
     {
@@ -16,5 +17,7 @@ public class AiMoving : MonoBehaviour
         transform.position = Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
         transform.up = player.transform.position - transform.position;
     }
+
+
 }
 
