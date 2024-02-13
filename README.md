@@ -1,10 +1,13 @@
 # ShapeShot
 
 Shoot shapes and shape shoot!
+##TODO List is seem in the Projects Tab ^^^
+
 Overview
 
 ShapeShot is an intense arcade-style shooter that puts players in control of a unique geometric spaceship. The game challenges players to fend off waves of abstract enemies while navigating through chaotic environments. With fast-paced gameplay, vibrant visuals, and a dynamic soundtrack that evolves with the intensity of the action, ShapeShot offers a thrilling gaming experience.
 Gameplay
+
 Player Controls
 
     Use arrow keys or WASD for movement.
@@ -24,12 +27,7 @@ Enemy Shapes
 Environments
 
     Dynamic and changing environments with obstacles that players must navigate.
-    Transition between different abstract worlds as players progress, each with its own visual style and challenges.
-
-Combo System
-
-    Encourage players to chain together enemy takedowns for higher scores.
-    Introduce a combo meter that rewards skillful and strategic play.
+    Transition between different abstract worlds as players progress, each with its own visual style and challenges.\
 
 Visuals and Audio
 
@@ -38,9 +36,3 @@ Visuals and Audio
     Pixel art with a resolution of 32x32 pixels.
     Vibrant and contrasting colors to enhance visibility and engagement.
     Consistent geometric design for spaceships, enemies, and environments.
-
-Leaderboards and Achievements
-
-    Implement a leaderboard system to track high scores.
-    Include a variety of achievements for players to unlock, encouraging replayability.
-
