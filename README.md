@@ -1,10 +1,10 @@
+## TODO List is seem in the Projects Tab ^^^
+
 # ShapeShot
 
 Shoot shapes and shape shoot!
 
-## TODO List is seem in the Projects Tab ^^^
-
-Overview
+### Overview
 
 ShapeShot is an intense arcade-style shooter that puts players in control of a unique geometric spaceship. The game challenges players to fend off waves of abstract enemies while navigating through chaotic environments. With fast-paced gameplay, vibrant visuals, and a dynamic soundtrack that evolves with the intensity of the action, ShapeShot offers a thrilling gaming experience.
 Gameplay
