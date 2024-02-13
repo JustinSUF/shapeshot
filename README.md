@@ -1,7 +1,8 @@
 # ShapeShot
 
 Shoot shapes and shape shoot!
-##TODO List is seem in the Projects Tab ^^^
+
+## TODO List is seem in the Projects Tab ^^^
 
 Overview
 
