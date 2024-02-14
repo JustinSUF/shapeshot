@@ -135,6 +135,14 @@ PrefabInstance:
       propertyPath: health
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5279052819419798778, guid: 5622c9d0238eb5e4087079cf2c352c36, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 465732832}
+    - target: {fileID: 5279052819419798778, guid: 5622c9d0238eb5e4087079cf2c352c36, type: 3}
+      propertyPath: RespawnPlayer
+      value: 
+      objectReference: {fileID: 1291435812}
     - target: {fileID: 5938498374119046760, guid: 5622c9d0238eb5e4087079cf2c352c36, type: 3}
       propertyPath: m_Name
       value: Player (1)

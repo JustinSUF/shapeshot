@@ -6,12 +6,14 @@ public class PlayerHealth : MonoBehaviour
 {
     public int maxHealth = 10;
     public int health;
-    public bool alive = true;
-    public GameObject ResawpnPlayer;
+    public GameObject RespawnPlayer;
+    public GameObject player;
+
     // Start is called before the first frame update
     void Start()
     {
         health = maxHealth;
+        
     }
 
     public void TakeDamage(int damage)
@@ -20,8 +22,8 @@ public class PlayerHealth : MonoBehaviour
 
         if(health <= 0)
         {
-            
-            
+            player.transform.position = RespawnPlayer.transform.position;
+            health = maxHealth;
         }
     }
 }
