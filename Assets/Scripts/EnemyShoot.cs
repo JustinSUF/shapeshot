@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class EnemyShoot : MonoBehaviour
@@ -38,7 +37,8 @@ public class EnemyShoot : MonoBehaviour
     // Update is called once per frame
     void shoot()
     {
-        Instantiate(bulletPrefab,bulletSpawnPoint.position,bulletPrefab.transform.rotation);
+        var bullet= Instantiate(bulletPrefab,bulletSpawnPoint.position, bulletSpawnPoint.rotation);
+        bullet.GetComponent<Rigidbody2D>().velocity = bulletSpawnPoint.localPosition * bulletspeed;
         
     }
 }
