@@ -121,14 +121,14 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: GlowPillar
     originalName: 
-    pivot: {x: 0.5, y: 0}
+    pivot: {x: 0.47058824, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 32
+      width: 17
       height: 32
     spriteID: 31dd48936681b6c41a724bb355b48d3f
     spriteBone: []
@@ -151,9 +151,9 @@ ScriptedImporter:
     - name: GlowPillar
       frameIndex: 0
       cellRect:
-        x: 0
+        x: 8
         y: 0
-        width: 32
+        width: 17
         height: 32
       spriteId: 31dd48936681b6c41a724bb355b48d3f
     linkedCells: []
