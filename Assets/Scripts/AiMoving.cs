@@ -5,7 +5,7 @@ using UnityEngine;
 public class AiMoving : MonoBehaviour
 {
     [SerializeField] private GameObject player;
-    [SerializeField] private float speed = .00005f;
+    [SerializeField] private float speed = 5f;
     
     
     void Start()

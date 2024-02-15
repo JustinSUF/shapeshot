@@ -7,10 +7,13 @@ public class AiDamage : MonoBehaviour
 {
     public int damage;
     public PlayerHealth playerHealth;
+    public int HealthEnemy = 25;
+    public int healthEnemy;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        healthEnemy = HealthEnemy;
     }
 
     // Update is called once per frame
