@@ -602,6 +602,7 @@ GameObject:
   - component: {fileID: 489773548}
   - component: {fileID: 489773547}
   - component: {fileID: 489773549}
+  - component: {fileID: 489773550}
   m_Layer: 0
   m_Name: PlayButton
   m_TagString: Untagged
@@ -709,7 +710,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 489773547}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 489773550}
+        m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
+        m_MethodName: SceneLoad
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &489773550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 489773545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee416ed294106a04a909acd8f45e8f38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &934288601
 GameObject:
   m_ObjectHideFlags: 0
@@ -1049,7 +1074,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -1180,6 +1205,7 @@ GameObject:
   - component: {fileID: 1597349580}
   - component: {fileID: 1597349579}
   - component: {fileID: 1597349581}
+  - component: {fileID: 1597349582}
   m_Layer: 0
   m_Name: ExitButton
   m_TagString: Untagged
@@ -1287,7 +1313,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1597349579}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1597349582}
+        m_TargetAssemblyTypeName: ExitButton, Assembly-CSharp
+        m_MethodName: ExitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1597349582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1597349577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63ef3b4657e1e92478e4158665ee7bad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1751329379
 GameObject:
   m_ObjectHideFlags: 0
