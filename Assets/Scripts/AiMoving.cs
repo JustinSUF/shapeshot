@@ -10,7 +10,7 @@ public class AiMoving : MonoBehaviour
     
     void Start()
     {
-     
+       
     }
     void Update()
     {
