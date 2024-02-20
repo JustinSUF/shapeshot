@@ -14,8 +14,9 @@ public class AiDamage : MonoBehaviour
     void Start()
     {
         healthEnemy = HealthEnemy;
+        playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();
     }
-
+  
     // Update is called once per frame
     void Update()
     {
