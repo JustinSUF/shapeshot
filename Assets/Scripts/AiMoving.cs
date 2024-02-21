@@ -4,17 +4,18 @@ using UnityEngine;
 
 public class AiMoving : MonoBehaviour
 {
-    [SerializeField] private GameObject player;
+    private GameObject player;
     [SerializeField] private float speed = 5f;
     
     
     void Start()
     {
-       
+        player = GameObject.FindGameObjectWithTag("Player");
     }
     void Update()
     {
-        transform.position = Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
+        Vector2 targetPos = GameObject.FindGameObjectWithTag("Player").transform.position - this.transform.position;
+        transform.position = Vector2.MoveTowards(transform.position, targetPos, speed * Time.deltaTime);
         transform.up = player.transform.position - transform.position;
     }
 

@@ -6,15 +6,16 @@ using UnityEngine;
 public class AiDamage : MonoBehaviour
 {
     public int damage;
-    public PlayerHealth playerHealth;
+    private PlayerHealth playerHealth;
     public int HealthEnemy = 25;
     public int healthEnemy;
 
     // Start is called before the first frame update
     void Start()
     {
-        healthEnemy = HealthEnemy;
         playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();
+        healthEnemy = HealthEnemy;
+        
     }
   
     // Update is called once per frame

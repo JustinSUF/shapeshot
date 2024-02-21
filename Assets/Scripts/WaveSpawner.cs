@@ -9,7 +9,7 @@ public class WaveSpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("Spawn", 1.5f, 1f);
+        InvokeRepeating("Spawn", 3.5f, 3f);
     }
 
     public void Spawn()

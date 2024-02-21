@@ -562,7 +562,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy:
-  - {fileID: 8506760159870989321, guid: 5bb1663c2eb639640af4996a515875da, type: 3}
+  - {fileID: 2006896129889097107, guid: 34b837b9f291d0b4a8cda94439dc9020, type: 3}
 --- !u!1001 &6385206179906984153
 PrefabInstance:
   m_ObjectHideFlags: 0
