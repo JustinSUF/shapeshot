@@ -8,6 +8,7 @@ public class BulletMove : MonoBehaviour
     public float speed;
     public int damage;
     PlayerHealth playerHealth;
+    public float SecondsTillDestroy;
 
     // Start is called before the first frame update
     
@@ -16,8 +17,11 @@ public class BulletMove : MonoBehaviour
         playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();
         Vector2 targetPos = GameObject.FindGameObjectWithTag("Player").transform.position - this.transform.position;
         this.GetComponent<Rigidbody2D>().velocity = targetPos * speed;
+        StartCoroutine(waiter());
     }
 
+
+    
     // Update is called once per frame
     
     private void OnTriggerEnter2D(Collider2D collision)
@@ -28,5 +32,11 @@ public class BulletMove : MonoBehaviour
             Destroy(this.gameObject);
             playerHealth.TakeDamage(damage);
         }
+    }
+
+    IEnumerator waiter()
+    {
+        yield return new WaitForSeconds(SecondsTillDestroy);
+        Object.Destroy(this.gameObject);
     }
 }
