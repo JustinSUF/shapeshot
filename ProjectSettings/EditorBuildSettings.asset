@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Title Screen.unity
     guid: ffaaa16f66c216a4499ae2b592deb6ec
   - enabled: 1
+    path: Assets/Scenes/JustinMovement.unity
+    guid: 9e98ce0e986f0dd46a729f0b98810ff9
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   m_configObjects: {}
