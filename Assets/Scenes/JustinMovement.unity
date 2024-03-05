@@ -320,7 +320,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2466ae3a0cad4d748a49088c1a71c27d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 998362449}
   speed: 0.6
 --- !u!212 &614928883
 SpriteRenderer:
@@ -403,7 +402,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 2
-  playerHealth: {fileID: 998362456}
   HealthEnemy: 25
   healthEnemy: 0
 --- !u!50 &614928886
@@ -985,7 +983,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -99
   m_Sprite: {fileID: 21300000, guid: d5e54a3d8653f4245a59d69fdf736b6d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
