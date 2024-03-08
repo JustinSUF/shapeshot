@@ -43,9 +43,9 @@ GameObject:
   - component: {fileID: 2015497643441011532}
   - component: {fileID: 8662718073209936619}
   - component: {fileID: 2291150729336504221}
-  - component: {fileID: 4824178917108197156}
   - component: {fileID: 4447989192854877252}
   - component: {fileID: 9008843016786581652}
+  - component: {fileID: 4824178917108197156}
   m_Layer: 0
   m_Name: Cricle
   m_TagString: Enemy
@@ -133,6 +133,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2466ae3a0cad4d748a49088c1a71c27d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
   speed: 0.6
 --- !u!114 &2291150729336504221
 MonoBehaviour:
@@ -147,22 +148,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 2
+  playerHealth: {fileID: 0}
   HealthEnemy: 25
   healthEnemy: 0
---- !u!114 &4824178917108197156
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2006896129889097107}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b70ffde4c00b384199bedab0a1e6287, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletSpawnPoint: {fileID: 7000888739856301233}
-  bulletPrefab: {fileID: 9033974549585857586, guid: 764adbeb3e2a2844c99b4a7930a3beda, type: 3}
 --- !u!58 &4447989192854877252
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -225,3 +213,17 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &4824178917108197156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2006896129889097107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b70ffde4c00b384199bedab0a1e6287, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletSpawnPoint: {fileID: 7000888739856301233}
+  bulletPrefab: {fileID: 9033974549585857586, guid: 764adbeb3e2a2844c99b4a7930a3beda, type: 3}
