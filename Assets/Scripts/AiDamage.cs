@@ -15,13 +15,16 @@ public class AiDamage : MonoBehaviour
     {
         playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();
         healthEnemy = HealthEnemy;
-        
+
     }
-  
+
     // Update is called once per frame
     void Update()
     {
-        
+        if (healthEnemy <= 0)
+        {
+            Destroy(this.gameObject);
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -30,5 +33,10 @@ public class AiDamage : MonoBehaviour
         {
             playerHealth.TakeDamage(damage);
         }
+    }
+
+    public void EDamage(int damage)
+    {
+        healthEnemy -= damage;
     }
 }
