@@ -580,8 +580,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 10
   health: 0
-  RespawnPlayer: {fileID: 0}
-  player: {fileID: 0}
+  RespawnPlayer: {fileID: 499499544}
+  player: {fileID: 566547416}
 --- !u!114 &566547426
 MonoBehaviour:
   m_ObjectHideFlags: 0

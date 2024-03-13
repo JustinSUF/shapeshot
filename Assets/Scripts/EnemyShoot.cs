@@ -17,7 +17,7 @@ public class EnemyShoot : MonoBehaviour
     {
         checkIfShouldShoot();
     }
-
+    
     void checkIfShouldShoot()
     {
         if (timeWhenAllowedNextShoot <= Time.time)

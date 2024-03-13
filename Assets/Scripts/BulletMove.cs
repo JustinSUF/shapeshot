@@ -20,19 +20,15 @@ public class BulletMove : MonoBehaviour
         StartCoroutine(waiter());
     }
 
-
-    
-    // Update is called once per frame
-    
     private void OnTriggerEnter2D(Collider2D collision)
     {
-
         if (collision.gameObject.tag == "Player")
         {
-            Destroy(this.gameObject);
-            playerHealth.TakeDamage(damage);
+           Destroy(this.gameObject);
+           playerHealth.TakeDamage(damage);
         }
     }
+ 
 
     IEnumerator waiter()
     {
