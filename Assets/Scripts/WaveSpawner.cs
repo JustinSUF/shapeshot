@@ -18,6 +18,7 @@ public class WaveSpawner : MonoBehaviour
 
         GameObject REnemy = enemy[Random.Range(0, enemy.Length)];
 
-        Instantiate(REnemy, new Vector2(-9.64f, randomY), REnemy.transform.rotation);
+        Instantiate(REnemy, new Vector2(-14.5f, randomY), REnemy.transform.rotation);
     }
 }
+

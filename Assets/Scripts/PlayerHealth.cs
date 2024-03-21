@@ -9,8 +9,8 @@ public class PlayerHealth : MonoBehaviour
     public GameObject RespawnPlayer;
     public GameObject player;
 
-    private float boundary = 8.36f;
-    private float boundrayY = 4.4f;
+    private float boundary = 13.4f;
+    private float boundrayY = 7.5f;
 
     // Start is called before the first frame update
     void Start()
@@ -25,6 +25,7 @@ public class PlayerHealth : MonoBehaviour
 
         if(health <= 0)
         {
+            
             player.transform.position = RespawnPlayer.transform.position;
             health = maxHealth;
         }
