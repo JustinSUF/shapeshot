@@ -29,6 +29,7 @@ public class PlayerBullet : MonoBehaviour
 
                     enemyHealth.EDamage(damage);
                     Destroy(this.gameObject);
+            
         }
     }
 
