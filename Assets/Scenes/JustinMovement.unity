@@ -579,7 +579,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d09049dbd78cfca479676fc735919312, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 10
+  maxHealth: 50
   health: 0
   RespawnPlayer: {fileID: 499499544}
   player: {fileID: 566547416}
@@ -1016,6 +1016,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemy:
   - {fileID: 2006896129889097107, guid: 34b837b9f291d0b4a8cda94439dc9020, type: 3}
+  - {fileID: 3431721454050705560, guid: fd8f01cb0c04db04fb18b294de56a0d1, type: 3}
 --- !u!4 &1408220281
 Transform:
   m_ObjectHideFlags: 0
