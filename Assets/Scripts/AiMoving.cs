@@ -6,7 +6,7 @@ public class AiMoving : MonoBehaviour
 {
     private GameObject player;
     [SerializeField] private float speed = 5f;
-
+    
     
     void Start()
     {
@@ -14,10 +14,11 @@ public class AiMoving : MonoBehaviour
     }
     void Update()
     {
-        //Vector2 targetPos = player.transform.position - this.transform.position;
+        Vector2 targetPos = GameObject.FindGameObjectWithTag("Player").transform.position - this.transform.position;
+        transform.position = Vector2.MoveTowards(transform.position, targetPos, speed * Time.deltaTime);
         transform.up = player.transform.position - transform.position;
-        transform.position = Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
     }
-   
+
+
 }
 
