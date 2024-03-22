@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 399663781848268595}
   - component: {fileID: 6619514062204858754}
   - component: {fileID: 9160207095022784358}
+  - component: {fileID: 8163121934580419165}
   m_Layer: 0
   m_Name: BoomEnemy
   m_TagString: Enemy
@@ -148,9 +149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f46cf94755dbe14f9412e121198c9b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 20
-  HealthEnemy: 5
-  healthEnemy: 0
+  soundToPlay: {fileID: 8300000, guid: c6472db03e4ba1140a56941f65297b2f, type: 3}
 --- !u!50 &9160207095022784358
 Rigidbody2D:
   serializedVersion: 4
@@ -166,7 +165,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -178,3 +177,18 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &8163121934580419165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6356944392360766876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 722c3282000c00a4789bd9242b20f577, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 20
+  HealthEnemy: 5
+  healthEnemy: 0
