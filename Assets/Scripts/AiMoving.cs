@@ -14,9 +14,8 @@ public class AiMoving : MonoBehaviour
     }
     void Update()
     {
-        Vector2 targetPos = GameObject.FindGameObjectWithTag("Player").transform.position - this.transform.position;
-        transform.position = Vector2.MoveTowards(transform.position, targetPos, speed * Time.deltaTime);
         transform.up = player.transform.position - transform.position;
+        transform.position = Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
     }
 
 
