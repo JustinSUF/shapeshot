@@ -8,6 +8,7 @@ TagManager:
   - PlayerBullet
   - HealthUp
   - Audio
+  - Speed
   layers:
   - Default
   - TransparentFX
