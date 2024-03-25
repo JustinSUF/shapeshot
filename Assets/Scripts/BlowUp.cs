@@ -4,12 +4,18 @@ using UnityEngine;
 
 public class BlowUp : MonoBehaviour
 {
-    public AudioClip soundToPlay;
-    private AudioSource audioSource;
+   
+    public AudioSource audioSource;
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        if (collision.gameObject.tag == "Player") 
+        {
         Destroy(this.gameObject);
-        audioSource.PlayOneShot(soundToPlay);
+        audioSource.Play();
+        }
+       
+
+
     }
 
 
