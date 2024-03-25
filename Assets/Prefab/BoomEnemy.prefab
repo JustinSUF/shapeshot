@@ -151,7 +151,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f46cf94755dbe14f9412e121198c9b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundToPlay: {fileID: 8300000, guid: c6472db03e4ba1140a56941f65297b2f, type: 3}
+  audioSource: {fileID: 0}
 --- !u!50 &9160207095022784358
 Rigidbody2D:
   serializedVersion: 4

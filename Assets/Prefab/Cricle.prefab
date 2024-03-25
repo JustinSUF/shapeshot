@@ -149,7 +149,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 2
-  HealthEnemy: 25
+  HealthEnemy: 10
   healthEnemy: 0
 --- !u!58 &4447989192854877252
 CircleCollider2D:
