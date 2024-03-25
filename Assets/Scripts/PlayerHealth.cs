@@ -18,7 +18,14 @@ public class PlayerHealth : MonoBehaviour
         health = maxHealth;
         
     }
-
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "HealthUp")
+        {
+            health = health + 5;
+        }
+        
+    }
     public void TakeDamage(int damage)
     {
         health -= damage;

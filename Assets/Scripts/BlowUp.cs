@@ -4,7 +4,13 @@ using UnityEngine;
 
 public class BlowUp : MonoBehaviour
 {
-   
+    AudioSource Audio;
+
+    private void Start()
+    {
+        Audio = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioSource>();
+        audioSource = Audio;
+    }
     public AudioSource audioSource;
     private void OnCollisionEnter2D(Collision2D collision)
     {
