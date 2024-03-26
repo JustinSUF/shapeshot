@@ -5,14 +5,17 @@ public class PlayerMovement : MonoBehaviour
     public float rotationSpeed = 180f; // Rotation speed in degrees per second
     public float moveSpeed = 5f; // Movement speed in units per second
 
-    private float Timeforspeed  = 0f;
-    private float speedend = 10f;
+    
+    private float speedend = 0f;
+    private bool Speeding;
 
     private Rigidbody2D rb;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+
+        Speeding = false; 
     }
 
     void Update()
@@ -25,7 +28,17 @@ public class PlayerMovement : MonoBehaviour
         float moveInput = Input.GetAxis("Vertical");
         MovePlayer(moveInput);
 
-    
+        if (Speeding)
+        {
+            speedend += Time.deltaTime;
+            if (speedend >= 10)
+            {
+                moveSpeed = 5;
+                speedend = 0;
+                Speeding = false;
+
+            }
+        }
     }
 
     void RotatePlayer(float rotationInput)
@@ -48,19 +61,16 @@ public class PlayerMovement : MonoBehaviour
     {
         if (collision.gameObject.tag == "Speed")
         {
-            if (Timeforspeed <= Time.time)
-        {
-
-            Speed();
-            Timeforspeed = Time.time + speedend;
-
-        }
+            Speeding = true;
+            moveSpeed = 10;
+            
         }
            
     }
     void Speed()
     {
         moveSpeed = moveSpeed + 5;
+        
     }
         
     
