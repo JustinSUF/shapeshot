@@ -67,11 +67,7 @@ public class PlayerMovement : MonoBehaviour
         }
            
     }
-    void Speed()
-    {
-        moveSpeed = moveSpeed + 5;
-        
-    }
+   
         
     
 }
