@@ -16,11 +16,12 @@ public class WaveSpawner : MonoBehaviour
 
     public void Spawn()
     {
-        float randomY = Random.Range(4.64f,-4.83f);
+        float randomY = Random.Range(7.14f, -7.14f);
+        float randomXX = Random.Range(13.4f, -13.4f);
 
         GameObject REnemy = enemy[Random.Range(0, enemy.Length)];
 
-        Instantiate(REnemy, new Vector2(-14.5f, randomY), REnemy.transform.rotation);
+        Instantiate(REnemy, new Vector2(randomXX, randomY), REnemy.transform.rotation);
     }
 
     public void boost()
