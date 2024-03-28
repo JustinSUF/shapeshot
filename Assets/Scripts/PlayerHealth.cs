@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerHealth : MonoBehaviour
 {
     public int maxHealth = 10;
-    public int health;
+    public static int health;
     public GameObject RespawnPlayer;
     public GameObject player;
 
@@ -17,6 +17,8 @@ public class PlayerHealth : MonoBehaviour
     private float boundrayY = 7.5f;
 
     private SpriteRenderer spriteRenderer; // Reference to the SpriteRenderer component
+
+    public Rigidbody2D playerRB;
 
     // Start is called before the first frame update
     void Start()
@@ -40,6 +42,7 @@ public class PlayerHealth : MonoBehaviour
 
         if (health <= 0)
         {
+            HealthUI.lives--;
             player.transform.position = RespawnPlayer.transform.position;
             health = maxHealth;
         }
@@ -72,6 +75,12 @@ public class PlayerHealth : MonoBehaviour
         if (transform.position.y > boundrayY)
         {
             transform.position = new Vector2(transform.position.x, boundrayY);
+        }
+
+        if (HealthUI.gameOver)
+        {
+            playerRB.constraints = RigidbodyConstraints2D.FreezeAll;
+            spriteRenderer.enabled = false;
         }
     }
 }
