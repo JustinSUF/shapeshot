@@ -9,6 +9,7 @@ TagManager:
   - HealthUp
   - Audio
   - Speed
+  - Part
   layers:
   - Default
   - TransparentFX
