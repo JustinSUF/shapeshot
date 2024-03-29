@@ -20,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/EnemyGuide.unity
     guid: fe3afac9de60dab43a68d9ef412f2aa1
+  - enabled: 1
+    path: Assets/Scenes/HowToPlay.unity
+    guid: e7417ca2fab427243ad14958fc7f2c79
   - enabled: 0
     path: Assets/Scenes/TestScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
