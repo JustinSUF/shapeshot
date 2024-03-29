@@ -14,5 +14,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _data:
     _json: '{"declarations":{"Kind":"Flow","collection":{"$content":[{"name":"score","value":{"$content":0,"$type":"System.Int32"},"typeHandle":{"Identification":"System.Int32,
-      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
-    _objectReferences: []
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"enemySprites","value":{"$content":[{"$content":0,"$type":"UnityEngine.Object"},{"$content":1,"$type":"UnityEngine.Object"},{"$content":2,"$type":"UnityEngine.Object"},{"$content":3,"$type":"UnityEngine.Object"}],"$type":"Unity.VisualScripting.AotList"},"typeHandle":{"Identification":"Unity.VisualScripting.AotList,
+      Unity.VisualScripting.Core, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"enemyDescriptions","value":{"$content":[{"$content":"The
+      most basic unit in the Polygon Space Force. They probably drink pumpkin spice
+      lattes and listen to Taylor Swift for all we know.","$type":"System.String"},{"$content":"The
+      faster counterpart to the circle. They think that listening to Sonic the Hedgehog
+      OSTs makes them cool for whatever reason.","$type":"System.String"},{"$content":"These
+      brave and totally useful soldiers are willing to sacrifice themselves for their
+      army. Don''t let them find out about anti-kamikaze legislation, though.","$type":"System.String"},{"$content":"Acting
+      as the totally willing test subjects for the Polygon Space Force''s cutting-edge
+      technology, these units can shoot eight bullets at a time.","$type":"System.String"}],"$type":"Unity.VisualScripting.AotList"},"typeHandle":{"Identification":"Unity.VisualScripting.AotList,
+      Unity.VisualScripting.Core, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"enemyNames","value":{"$content":[{"$content":"Circle","$type":"System.String"},{"$content":"Hexagon","$type":"System.String"},{"$content":"Octagon","$type":"System.String"},{"$content":"Diamond","$type":"System.String"}],"$type":"Unity.VisualScripting.AotList"},"typeHandle":{"Identification":"Unity.VisualScripting.AotList,
+      Unity.VisualScripting.Core, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+    _objectReferences:
+    - {fileID: 21300000, guid: 2efcebf740a582d48928dbbf65999a91, type: 3}
+    - {fileID: 21300000, guid: 553bbf79554b36e4298e75cb8c19bf57, type: 3}
+    - {fileID: 21300000, guid: 3dfd195f28776294892119963b5e6416, type: 3}
+    - {fileID: 21300000, guid: 4f7cbb43606021a40a8d6dfa0d1b1f33, type: 3}
