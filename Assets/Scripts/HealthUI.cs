@@ -9,6 +9,8 @@ public class HealthUI : MonoBehaviour
     public static bool gameOver;
     public static int lives;
 
+    public GameObject gameOverObject;
+
     public float sceneLoadDelay = 5;
 
     public Image shipSR3;
@@ -40,6 +42,7 @@ public class HealthUI : MonoBehaviour
 
         if (gameOver)
         {
+            gameOverObject.SetActive(true);
             sceneLoadDelay -= Time.deltaTime;
 
             if (sceneLoadDelay <= 0)
