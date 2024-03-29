@@ -1,4 +1,6 @@
-## TODO List is seen in the Projects Tab & todo.md ^^^
+## NEW TODO List is Seen in todo.md!! ^^^
+
+## OLD TODO List is seen in the Projects Tab ^^^
 
 # ShapeShot
 
