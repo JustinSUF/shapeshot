@@ -1,4 +1,4 @@
-## TODO List is seem in the Projects Tab ^^^
+## TODO List is seen in the Projects Tab & todo.md ^^^
 
 # ShapeShot
 
