@@ -11,13 +11,16 @@ public class HealthUI : MonoBehaviour
 
     public GameObject gameOverObject;
 
-    public float sceneLoadDelay = 5;
-
     public Image shipSR3;
     public Image shipSR2;
     public Image shipSR1;
 
     // Start is called before the first frame update
+
+    private void Awake()
+    {
+        gameOver = false;
+    }
     void Start()
     {
         lives = 3;   
@@ -43,12 +46,6 @@ public class HealthUI : MonoBehaviour
         if (gameOver)
         {
             gameOverObject.SetActive(true);
-            sceneLoadDelay -= Time.deltaTime;
-
-            if (sceneLoadDelay <= 0)
-            {
-                SceneManager.LoadScene(0);
-            }
         }
     }
 }
