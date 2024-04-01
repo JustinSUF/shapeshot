@@ -255,8 +255,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Acting as the totally willing test subjects for the Polygon Space Force's
-    cutting-edge technology, these units can shoot eight bullets at a time.
+  m_text: Don't let their scrawny frame fool you, these brutes can shoot bullets
+    three times the size of normal bullets. You're lucky it's cutting season and
+    not bulking season.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5b2f4b9a84fd9894fa418b5a8d1b892c, type: 2}
   m_sharedMaterial: {fileID: -769332336166708081, guid: 5b2f4b9a84fd9894fa418b5a8d1b892c, type: 2}
