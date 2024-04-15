@@ -26,6 +26,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/InfiniteLevel.unity
     guid: cfb3e3d9774b0984991b35cb44504b5d
+  - enabled: 1
+    path: Assets/Scenes/Level1WinScreen.unity
+    guid: 257e0f4f0a135b34c9ba06631d0386bb
+  - enabled: 1
+    path: Assets/Scenes/Level2WinScreen.unity
+    guid: 1f75f0d11e9a6474198f9cccf849010b
+  - enabled: 1
+    path: Assets/Scenes/Level3WinScreen.unity
+    guid: d5abb07ed3005a64db7c83a10d12f1c2
   - enabled: 0
     path: Assets/Scenes/TestScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
