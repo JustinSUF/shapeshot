@@ -712,8 +712,8 @@ MonoBehaviour:
   maxHealth: 50
   RespawnPlayer: {fileID: 499499544}
   player: {fileID: 566547416}
-  normalSprite: {fileID: 0}
-  damageSprite: {fileID: 0}
+  normalSprite: {fileID: 21300000, guid: d0f98af95b872424dba65997edfea52e, type: 3}
+  damageSprite: {fileID: 21300000, guid: ed91acabae34a1044845194e21a052e6, type: 3}
   switchDuration: 0.5
   playerRB: {fileID: 0}
 --- !u!114 &566547426
@@ -2600,7 +2600,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04584ef288c991344bb64c1429b08c4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneLoadDelay: 5
+  gameOverObject: {fileID: 0}
   shipSR3: {fileID: 1164034024}
   shipSR2: {fileID: 1211462218}
   shipSR1: {fileID: 1549939622}
