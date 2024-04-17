@@ -712,8 +712,8 @@ MonoBehaviour:
   maxHealth: 50
   RespawnPlayer: {fileID: 499499544}
   player: {fileID: 566547416}
-  normalSprite: {fileID: 0}
-  damageSprite: {fileID: 0}
+  normalSprite: {fileID: 21300000, guid: d0f98af95b872424dba65997edfea52e, type: 3}
+  damageSprite: {fileID: 21300000, guid: ed91acabae34a1044845194e21a052e6, type: 3}
   switchDuration: 0.5
   playerRB: {fileID: 0}
 --- !u!114 &566547426
@@ -2369,7 +2369,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -99
-  m_Sprite: {fileID: 21300000, guid: f7d7a4e7633ce7a40b00251e56a620ba, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fd45a6f42b112f4499c90d3e87816063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2390,7 +2390,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.75, y: 0.75, z: 0.75}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
