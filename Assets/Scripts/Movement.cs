@@ -57,17 +57,16 @@ public class PlayerMovement : MonoBehaviour
 
    
 
-    private void OnCollisionEnter2D(Collision2D collision)
+  
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Speed")
         {
             Speeding = true;
             moveSpeed = 10;
-            
+
         }
-           
     }
-   
-        
-    
+
+
 }

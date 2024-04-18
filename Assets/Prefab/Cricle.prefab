@@ -151,6 +151,11 @@ MonoBehaviour:
   damage: 2
   HealthEnemy: 10
   healthEnemy: 0
+  normalSprite: {fileID: 21300000, guid: 2efcebf740a582d48928dbbf65999a91, type: 3}
+  damageSprite: {fileID: 21300000, guid: 294241d1ceb77b34ba76362e925e84be, type: 3}
+  switchDuration: 2
+  numberflashes: 1
+  triggerCollider: {fileID: 0}
 --- !u!58 &4447989192854877252
 CircleCollider2D:
   m_ObjectHideFlags: 0

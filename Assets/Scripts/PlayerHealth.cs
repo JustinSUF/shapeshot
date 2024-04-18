@@ -12,13 +12,16 @@ public class PlayerHealth : MonoBehaviour
     public Sprite normalSprite; // Reference to the normal sprite
     public Sprite damageSprite; // Reference to the sprite to switch to when taking damage
     public float switchDuration = 0.5f; // Duration to switch to damage sprite (in seconds)
+    public int numberflashes;
 
-    private float boundary = 13.4f;
-    private float boundrayY = 7.5f;
+    private float boundary = 26.7f;
+    private float boundrayY = 13.43f;
 
     private SpriteRenderer spriteRenderer; // Reference to the SpriteRenderer component
 
     public Rigidbody2D playerRB;
+
+    public Collider2D triggerCollider;
 
     // Start is called before the first frame update
     void Start()
@@ -50,9 +53,16 @@ public class PlayerHealth : MonoBehaviour
 
     private IEnumerator FlashSprite()
     {
+        int temp = 0;
+        triggerCollider.enabled = false;
+        while (temp < numberflashes)
+        {
         spriteRenderer.sprite = damageSprite; // Switch to damage sprite
         yield return new WaitForSeconds(switchDuration); // Wait for switch duration
         spriteRenderer.sprite = normalSprite; // Switch back to normal sprite
+            temp++;
+        }
+        triggerCollider.enabled = true;
     }
 
     private void Update()
