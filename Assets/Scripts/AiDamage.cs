@@ -10,10 +10,8 @@ public class AiDamage : MonoBehaviour
     public int HealthEnemy = 25;
     public int healthEnemy;
 
-    public Sprite normalSprite; // Reference to the normal sprite
-    public Sprite damageSprite; // Reference to the sprite to switch to when taking damage
-    public float switchDuration = 0.5f; // Duration to switch to damage sprite (in seconds)
-    public int numberflashes;
+    float switchDuration = 0.1f; // Duration to switch to damage sprite (in seconds)
+    int numberflashes = 3;
 
     private SpriteRenderer spriteRenderer; // Reference to the SpriteRenderer component
 
@@ -42,8 +40,6 @@ public class AiDamage : MonoBehaviour
     }
     public void EDamage(int damage)
     {
-        
-        
         healthEnemy -= damage;
     }
 
@@ -53,10 +49,35 @@ public class AiDamage : MonoBehaviour
         {
            
             playerHealth.TakeDamage(damage);
-            GetComponent<SpriteRenderer>().material.color = Color.red;
+            StartCoroutine(FlashRed());
             
         }
+        if(collision.gameObject.tag == "PlayerBullet")
+        {
+            StartCoroutine(FlashRed());
+        }
     }
+    IEnumerator FlashRed()
+    {
+
+            GetComponent<SpriteRenderer>().material.color = Color.red;
+            yield return new WaitForSeconds(switchDuration);
+            GetComponent<SpriteRenderer>().material.color = Color.white;
+        yield return new WaitForSeconds(switchDuration);
+        GetComponent<SpriteRenderer>().material.color = Color.red;
+        yield return new WaitForSeconds(switchDuration);
+        GetComponent<SpriteRenderer>().material.color = Color.white;
+        yield return new WaitForSeconds(switchDuration);
+        GetComponent<SpriteRenderer>().material.color = Color.red;
+        yield return new WaitForSeconds(switchDuration);
+        GetComponent<SpriteRenderer>().material.color = Color.white;
+        yield return new WaitForSeconds(switchDuration);
+        GetComponent<SpriteRenderer>().material.color = Color.red;
+        yield return new WaitForSeconds(switchDuration);
+        GetComponent<SpriteRenderer>().material.color = Color.white;
+        yield return new WaitForSeconds(switchDuration);
+    }
+
 
  
 }

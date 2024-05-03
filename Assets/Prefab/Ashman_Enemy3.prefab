@@ -203,6 +203,7 @@ MonoBehaviour:
   damage: 0
   HealthEnemy: 25
   healthEnemy: 0
+  switchDuration: 0.3
 --- !u!50 &4003872555974094568
 Rigidbody2D:
   serializedVersion: 4
